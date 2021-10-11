@@ -1,0 +1,55 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Test Alert scenario 2",
+        "description": "",
+        "id": "verify-alert-message.;test-alert-scenario-2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on demo page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "click on Alerts and Modals",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Validate the message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Alert message.",
+    "description": "",
+    "id": "verify-alert-message.",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]
