@@ -17,7 +17,9 @@ public class HomePage  extends BasePage{
     }
 
     public boolean homePageIsDisplayed() throws Exception {
+        System.out.println(".................................................antes de get title en HomePage");
         return this.getTitle().equals(titleHomePage);
+
 
     }
     public void clickOnSecondTitle() throws Exception {

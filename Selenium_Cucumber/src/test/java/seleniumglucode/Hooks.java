@@ -14,19 +14,21 @@ public class Hooks {
     private void  setUp()  {
         nCase ++;
        System.out.println (" OJO!   Number  " + nCase +" is running right now");
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+       //System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Selenium\\Selenium_Cucumber\\src\\test\\resources\\chromedriver\\chromedriver.exe");
+
         driver = new ChromeDriver();
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(50000,TimeUnit.SECONDS);
         driver.get("https://imalittletester.com/");
     }
     @After
     public void tearDown () {
 
-        System.out.println (" OJO! Number  " + nCase +" finished successfully");
+        System.out.println (" OJO! Number  " + nCase +" finished");
        //driver.quit();
     }
     public static ChromeDriver getDriver(){

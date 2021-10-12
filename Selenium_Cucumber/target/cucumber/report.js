@@ -39,8 +39,8 @@ formatter.match({
   "location": "Test.user_is_on_demo_page()"
 });
 formatter.result({
-  "duration": 421915800,
-  "error_message": "java.lang.Exception: Could not find the driver title java.lang.NullPointerException\r\n\tat pom.BasePage.getTitle(BasePage.java:42)\r\n\tat pom.HomePage.homePageIsDisplayed(HomePage.java:20)\r\n\tat seleniumglucode.Test.user_is_on_demo_page(Test.java:16)\r\n\tat ✽.Given User is on demo page(C:/Projects/Selenium/Selenium_Cucumber/src/test/java/features/test.feature:5)\r\n",
+  "duration": 566475900,
+  "error_message": "java.lang.Exception: Could not find the driver title java.lang.NullPointerException\r\n\tat pom.BasePage.getTitle(BasePage.java:48)\r\n\tat pom.HomePage.homePageIsDisplayed(HomePage.java:21)\r\n\tat seleniumglucode.Test.user_is_on_demo_page(Test.java:15)\r\n\tat ✽.Given User is on demo page(C:/Projects/Selenium/Selenium_Cucumber/src/test/java/features/test.feature:5)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -56,7 +56,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 580300,
+  "duration": 1696800,
   "status": "passed"
 });
 });
