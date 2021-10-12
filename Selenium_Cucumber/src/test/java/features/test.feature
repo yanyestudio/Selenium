@@ -1,7 +1,8 @@
-Feature: Verify Alert message.
+Feature: Verify Menu Page.
 
   @Search
-  Scenario: Test Alert scenario 2
+  Scenario: Test page title
     Given User is on demo page
-    When click on Alerts and Modals
+    When click on Link
     Then Validate the message
+

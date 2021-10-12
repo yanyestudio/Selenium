@@ -1,16 +1,16 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Projects/Selenium/Selenium_Cucumber/src/test/java/features/test.feature");
 formatter.feature({
   "line": 1,
-  "name": "Verify Alert message.",
+  "name": "Verify Menu Page.",
   "description": "",
-  "id": "verify-alert-message.",
+  "id": "verify-menu-page.",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Test Alert scenario 2",
+  "name": "Test page title",
   "description": "",
-  "id": "verify-alert-message.;test-alert-scenario-2",
+  "id": "verify-menu-page.;test-page-title",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -27,7 +27,7 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "click on Alerts and Modals",
+  "name": "click on Link",
   "keyword": "When "
 });
 formatter.step({
@@ -39,21 +39,24 @@ formatter.match({
   "location": "Test.user_is_on_demo_page()"
 });
 formatter.result({
-  "duration": 5042717800,
-  "status": "passed"
+  "duration": 421915800,
+  "error_message": "java.lang.Exception: Could not find the driver title java.lang.NullPointerException\r\n\tat pom.BasePage.getTitle(BasePage.java:42)\r\n\tat pom.HomePage.homePageIsDisplayed(HomePage.java:20)\r\n\tat seleniumglucode.Test.user_is_on_demo_page(Test.java:16)\r\n\tat ✽.Given User is on demo page(C:/Projects/Selenium/Selenium_Cucumber/src/test/java/features/test.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "Test.click_on_Alerts_and_Modals()"
+  "location": "Test.click_on_Link()"
 });
 formatter.result({
-  "duration": 990104200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Test.validate_the_message()"
 });
 formatter.result({
-  "duration": 85882600,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 580300,
   "status": "passed"
 });
 });
