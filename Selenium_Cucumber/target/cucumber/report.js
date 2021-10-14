@@ -39,25 +39,25 @@ formatter.match({
   "location": "Test.user_is_on_demo_page()"
 });
 formatter.result({
-  "duration": 5155356300,
+  "duration": 5124188400,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.click_on_Link()"
 });
 formatter.result({
-  "duration": 1572512400,
+  "duration": 2137152100,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.validate_the_message()"
 });
 formatter.result({
-  "duration": 1202648500,
+  "duration": 912816800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 233900,
+  "duration": 171000,
   "status": "passed"
 });
 });

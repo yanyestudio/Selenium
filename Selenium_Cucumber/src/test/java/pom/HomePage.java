@@ -10,11 +10,7 @@ public class HomePage  extends BasePage{
 
     public WebElement titleSecondLocator;
     private String titleHomePage="Testing. With Java, Selenium, TestNG, Maven, Spring, IntelliJ and friends.";
-    private  By titleSecondlocator= By.xpath("//*[@id=\"menu-item-257\"]/a");
-
-
-
-
+    private  By titleSecondlocator=By.id("menu-item-2007");
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -32,9 +28,13 @@ public class HomePage  extends BasePage{
         return this.getTitle().equals(titleHomePage);
     }
     public void clickOnTitleSecond() throws Exception {
-       this.click(getTitleSecondlocator());
-
+      this.click(getTitleSecondlocator());
 
     }
 
 }
+
+
+
+
+
